@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIBannerView" customModule="UIBannerView" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Vka-lf-rB5" id="8hz-nT-mZq"/>
+                <outlet property="constraintBottom" destination="Qjq-7V-Yvv" id="3fB-nc-IJv"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="0ev-n7-7gn"/>
+                <outlet property="pageControl" destination="wS2-HV-3Kc" id="cki-21-7gP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vka-lf-rB5">
+                    <rect key="frame" x="0.0" y="44" width="414" height="274"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="szV-5M-Dcy">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wS2-HV-3Kc">
+                    <rect key="frame" x="207" y="355" width="0.0" height="0.0"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wS2-HV-3Kc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="7vT-M0-NB7"/>
+                <constraint firstItem="Vka-lf-rB5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8Z7-Qp-XZg"/>
+                <constraint firstItem="Vka-lf-rB5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9hH-BU-C2x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Vka-lf-rB5" secondAttribute="bottom" constant="37" id="Qjq-7V-Yvv"/>
+                <constraint firstItem="wS2-HV-3Kc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="WU2-T2-6W8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vka-lf-rB5" secondAttribute="trailing" id="aRy-dL-ruq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-27.790178571428569"/>
+        </view>
+    </objects>
+</document>

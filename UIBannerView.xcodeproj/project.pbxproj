@@ -15,6 +15,10 @@
 		F66CE36D23CC81E8003D3AFA /* IBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE36C23CC81E8003D3AFA /* IBannerModel.swift */; };
 		F66CE37023CC8218003D3AFA /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE36F23CC8218003D3AFA /* UIImageViewExtension.swift */; };
 		F66CE37323CC8248003D3AFA /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37223CC8248003D3AFA /* CGFloatExtension.swift */; };
+		F66CE37823CC85C7003D3AFA /* UIBannerViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37723CC85C7003D3AFA /* UIBannerViewProtocols.swift */; };
+		F66CE37A23CC85EE003D3AFA /* UIBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37923CC85EE003D3AFA /* UIBannerView.swift */; };
+		F66CE37C23CC8649003D3AFA /* UIBannerDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37B23CC8649003D3AFA /* UIBannerDesignable.swift */; };
+		F66CE37E23CC867B003D3AFA /* UIBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CE37D23CC867B003D3AFA /* UIBannerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		F66CE36C23CC81E8003D3AFA /* IBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBannerModel.swift; sourceTree = "<group>"; };
 		F66CE36F23CC8218003D3AFA /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		F66CE37223CC8248003D3AFA /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		F66CE37723CC85C7003D3AFA /* UIBannerViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerViewProtocols.swift; sourceTree = "<group>"; };
+		F66CE37923CC85EE003D3AFA /* UIBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerView.swift; sourceTree = "<group>"; };
+		F66CE37B23CC8649003D3AFA /* UIBannerDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerDesignable.swift; sourceTree = "<group>"; };
+		F66CE37D23CC867B003D3AFA /* UIBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIBannerView.xib; sourceTree = "<group>"; };
 		FA8D05F3890CB35973A73663 /* Pods-UIBannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView.debug.xcconfig"; path = "Target Support Files/Pods-UIBannerView/Pods-UIBannerView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F66CE36C23CC81E8003D3AFA /* IBannerModel.swift */,
+				F66CE37723CC85C7003D3AFA /* UIBannerViewProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -156,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				F66CE37523CC82C2003D3AFA /* UIBannerViewCell */,
+				F66CE37923CC85EE003D3AFA /* UIBannerView.swift */,
+				F66CE37B23CC8649003D3AFA /* UIBannerDesignable.swift */,
+				F66CE37D23CC867B003D3AFA /* UIBannerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66CE37E23CC867B003D3AFA /* UIBannerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66CE37023CC8218003D3AFA /* UIImageViewExtension.swift in Sources */,
+				F66CE37A23CC85EE003D3AFA /* UIBannerView.swift in Sources */,
 				F66CE37323CC8248003D3AFA /* CGFloatExtension.swift in Sources */,
+				F66CE37C23CC8649003D3AFA /* UIBannerDesignable.swift in Sources */,
+				F66CE37823CC85C7003D3AFA /* UIBannerViewProtocols.swift in Sources */,
 				F66CE36D23CC81E8003D3AFA /* IBannerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
