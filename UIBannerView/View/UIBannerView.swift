@@ -183,10 +183,7 @@ extension UIBannerView : UICollectionViewDelegate, UICollectionViewDataSource
         }
         else
         {
-            if (Int(newPage) < self.pageControl.numberOfPages - 1)
-            {
-                newPage = Float(velocity.x > 0 ? self.pageControl.currentPage + 1 : self.pageControl.currentPage - 1);
-            }
+            newPage = Float(velocity.x > 0 ? self.pageControl.currentPage + 1 : self.pageControl.currentPage - 1);
             if (newPage < 0)
             {
                 newPage = 0;
