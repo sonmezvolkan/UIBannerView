@@ -100,7 +100,7 @@ Pod::Spec.new do |spec|
 
 
   spec.resource_bundles = {
-    "UIBannerView" => ["UIBannerView/**/*.{storyboard,xib}"]
+    "UIBannerView" => ["UIBannerView/**/*.{xib}"]
   }
 
   # spec.public_header_files = "Classes/**/*.h"
