@@ -10,7 +10,7 @@ import UIKit;
 
 open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
 {
-    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var constraintBottom: NSLayoutConstraint!
@@ -19,7 +19,6 @@ open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
     
     open weak var delegate : UIBannerViewDelegate?;
     open weak var dataSource : UIBannerViewDataSource?;
-    
     
     override public init(frame: CGRect)
     {
@@ -49,7 +48,7 @@ open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
     
     private func setUp()
     {
-        Bundle.main.loadNibNamed("UIBannerView", owner: self, options: nil);
+        self.getPodBundle().loadNibNamed("UIBannerView", owner: self, options: nil);
         self.addSubview(self.contentView);
         self.bannerInit();
     }
@@ -67,7 +66,7 @@ open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
     {
         self.collectionView.delegate = self;
         self.collectionView.dataSource = self;
-        self.collectionView.register(UINib.init(nibName: "BannerViewDefaultCell", bundle: nil), forCellWithReuseIdentifier: "BannerViewDefaultCell");
+        self.collectionView.register(UINib.init(nibName: "UIBannerViewDefaultCell", bundle: self.getPodBundle()), forCellWithReuseIdentifier: "UIBannerViewDefaultCell");
         if let flowLayout = self.collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = .horizontal;
         }
@@ -80,11 +79,18 @@ open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
         self.pageControl.numberOfPages = count;
         self.pageControl.currentPage = 0;
     }
+    
+    private func getPodBundle() -> Bundle
+    {
+        let podBundle = Bundle(for: UIBannerView.self);
+        let bundleURL = podBundle.url(forResource: "UIBannerView", withExtension: "bundle")
+        return Bundle(url: bundleURL!)!
+    }
 }
 
 extension UIBannerView
 {
-    open func setDefaultBanners(banners: [IBanner])
+    open func setDefaultBanners(banners: [IBannerModel])
     {
         self.banners = banners;
         self.setPageControlNumberOfPages(count: banners.count);
@@ -142,7 +148,7 @@ extension UIBannerView : UICollectionViewDelegate, UICollectionViewDataSource
         {
             return delegate.bannerView(self, cellForItemAt: indexPath);
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerViewDefaultCell", for: indexPath) as! BannerViewDefaultCell;
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UIBannerViewDefaultCell", for: indexPath) as! UIBannerViewDefaultCell;
         cell.bind(banner: self.banners![indexPath.row]);
         return cell;
     }

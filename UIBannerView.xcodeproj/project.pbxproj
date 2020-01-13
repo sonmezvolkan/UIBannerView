@@ -19,6 +19,8 @@
 		F66CE37A23CC85EE003D3AFA /* UIBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37923CC85EE003D3AFA /* UIBannerView.swift */; };
 		F66CE37C23CC8649003D3AFA /* UIBannerDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37B23CC8649003D3AFA /* UIBannerDesignable.swift */; };
 		F66CE37E23CC867B003D3AFA /* UIBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CE37D23CC867B003D3AFA /* UIBannerView.xib */; };
+		F66CE38023CC87DD003D3AFA /* UIBannerViewDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CE37F23CC87DD003D3AFA /* UIBannerViewDefaultCell.xib */; };
+		F66CE38223CC87EA003D3AFA /* UIBannerViewDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE38123CC87EA003D3AFA /* UIBannerViewDefaultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		F66CE37923CC85EE003D3AFA /* UIBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerView.swift; sourceTree = "<group>"; };
 		F66CE37B23CC8649003D3AFA /* UIBannerDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerDesignable.swift; sourceTree = "<group>"; };
 		F66CE37D23CC867B003D3AFA /* UIBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIBannerView.xib; sourceTree = "<group>"; };
+		F66CE37F23CC87DD003D3AFA /* UIBannerViewDefaultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIBannerViewDefaultCell.xib; sourceTree = "<group>"; };
+		F66CE38123CC87EA003D3AFA /* UIBannerViewDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerViewDefaultCell.swift; sourceTree = "<group>"; };
 		FA8D05F3890CB35973A73663 /* Pods-UIBannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView.debug.xcconfig"; path = "Target Support Files/Pods-UIBannerView/Pods-UIBannerView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,8 @@
 		F66CE37523CC82C2003D3AFA /* UIBannerViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F66CE37F23CC87DD003D3AFA /* UIBannerViewDefaultCell.xib */,
+				F66CE38123CC87EA003D3AFA /* UIBannerViewDefaultCell.swift */,
 			);
 			path = UIBannerViewCell;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66CE38023CC87DD003D3AFA /* UIBannerViewDefaultCell.xib in Resources */,
 				F66CE37E23CC867B003D3AFA /* UIBannerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66CE38223CC87EA003D3AFA /* UIBannerViewDefaultCell.swift in Sources */,
 				F66CE37023CC8218003D3AFA /* UIImageViewExtension.swift in Sources */,
 				F66CE37A23CC85EE003D3AFA /* UIBannerView.swift in Sources */,
 				F66CE37323CC8248003D3AFA /* CGFloatExtension.swift in Sources */,
