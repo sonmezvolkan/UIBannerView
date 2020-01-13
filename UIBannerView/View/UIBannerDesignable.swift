@@ -16,6 +16,8 @@ open class UIBannerDesignable: UIView
     private var rightPercentage: CGFloat = 70.0;
     private var showPageControl: Bool = false;
     private var pagingEnabled: Bool = true;
+    private var trackColor: UIColor = UIColor(red: 255, green: 255, blue: 255, alpha: 16);
+    private var currentColor: UIColor = UIColor(red: 255, green: 255, blue: 255);
     
     @IBInspectable open var Padding: CGFloat
     {
@@ -51,5 +53,17 @@ open class UIBannerDesignable: UIView
     {
         get { return self.pagingEnabled; }
         set { self.pagingEnabled = newValue; }
+    }
+    
+    @IBInspectable open var TrackColor: UIColor
+    {
+        get { return self.trackColor; }
+        set { self.trackColor = newValue; }
+    }
+    
+    @IBInspectable open var CurrentColor: UIColor
+    {
+        get { return self.currentColor; }
+        set { self.currentColor = newValue; }
     }
 }

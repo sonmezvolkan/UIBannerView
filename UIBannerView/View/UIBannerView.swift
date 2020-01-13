@@ -60,6 +60,11 @@ open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
             self.constraintBottom.constant = 0;
             self.pageControl.isHidden = true;
         }
+        else
+        {
+            self.pageControl.pageIndicatorTintColor = self.CurrentColor;
+            self.pageControl.currentPageIndicatorTintColor = self.TrackColor;
+        }
     }
     
     public func bannerInit()
@@ -192,11 +197,7 @@ extension UIBannerView : UICollectionViewDelegate, UICollectionViewDataSource
             }
         }
         self.pageControl.currentPage = Int(newPage);
-        var point = CGPoint (x: CGFloat(newPage * pageWidth), y: targetContentOffset.pointee.y);
-        if (newPage == Float(self.pageControl.numberOfPages) - 1)
-        {
-            point = CGPoint(x: point.x - (RightPercentage.getPercentage(totalValue: Padding) * 4 / 5), y: point.y);
-        }
+        let point = CGPoint (x: CGFloat(newPage * pageWidth), y: targetContentOffset.pointee.y);
         targetContentOffset.pointee = point;
     }
 }

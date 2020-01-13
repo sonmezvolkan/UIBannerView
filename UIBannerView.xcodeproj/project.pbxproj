@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E9C2A4745EAC3E3B39A2F07 /* Pods_UIBannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7193AB78B96EBEBDE863074 /* Pods_UIBannerView.framework */; };
 		AC396D2392CEDA4C840CF0AF /* Pods_UIBannerView_UIBannerViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8917010341FE5FEEFBAC01B4 /* Pods_UIBannerView_UIBannerViewTests.framework */; };
+		F6505A9623CC9B8D00D684BA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6505A9523CC9B8D00D684BA /* UIColorExtension.swift */; };
 		F66CE35B23CC80D1003D3AFA /* UIBannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66CE35123CC80D1003D3AFA /* UIBannerView.framework */; };
 		F66CE36023CC80D1003D3AFA /* UIBannerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE35F23CC80D1003D3AFA /* UIBannerViewTests.swift */; };
 		F66CE36223CC80D1003D3AFA /* UIBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F66CE35423CC80D1003D3AFA /* UIBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +40,7 @@
 		8DAE75B9655C93EA9791C488 /* Pods-UIBannerView-UIBannerViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView-UIBannerViewTests.release.xcconfig"; path = "Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7193AB78B96EBEBDE863074 /* Pods_UIBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C962B48FD9628B970BBB65C5 /* Pods-UIBannerView-UIBannerViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView-UIBannerViewTests.debug.xcconfig"; path = "Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6505A9523CC9B8D00D684BA /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F66CE35123CC80D1003D3AFA /* UIBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66CE35423CC80D1003D3AFA /* UIBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBannerView.h; sourceTree = "<group>"; };
 		F66CE35523CC80D1003D3AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				F66CE36F23CC8218003D3AFA /* UIImageViewExtension.swift */,
 				F66CE37223CC8248003D3AFA /* CGFloatExtension.swift */,
+				F6505A9523CC9B8D00D684BA /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -169,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				F66CE37523CC82C2003D3AFA /* UIBannerViewCell */,
-				F66CE37923CC85EE003D3AFA /* UIBannerView.swift */,
 				F66CE37B23CC8649003D3AFA /* UIBannerDesignable.swift */,
+				F66CE37923CC85EE003D3AFA /* UIBannerView.swift */,
 				F66CE37D23CC867B003D3AFA /* UIBannerView.xib */,
 			);
 			path = View;
@@ -367,6 +370,7 @@
 				F66CE38223CC87EA003D3AFA /* UIBannerViewDefaultCell.swift in Sources */,
 				F66CE37023CC8218003D3AFA /* UIImageViewExtension.swift in Sources */,
 				F66CE37A23CC85EE003D3AFA /* UIBannerView.swift in Sources */,
+				F6505A9623CC9B8D00D684BA /* UIColorExtension.swift in Sources */,
 				F66CE37323CC8248003D3AFA /* CGFloatExtension.swift in Sources */,
 				F66CE37C23CC8649003D3AFA /* UIBannerDesignable.swift in Sources */,
 				F66CE37823CC85C7003D3AFA /* UIBannerViewProtocols.swift in Sources */,
