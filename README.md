@@ -28,6 +28,8 @@ create your custom cell.
 
 ```swift
 
+private var yourArray = [YourArray]();
+
 private func setUp()
 {
     self.bannerView.dataSource = self;
