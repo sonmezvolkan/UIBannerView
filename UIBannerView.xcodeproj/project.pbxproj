@@ -3,13 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9C2A4745EAC3E3B39A2F07 /* Pods_UIBannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7193AB78B96EBEBDE863074 /* Pods_UIBannerView.framework */; };
+		AC396D2392CEDA4C840CF0AF /* Pods_UIBannerView_UIBannerViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8917010341FE5FEEFBAC01B4 /* Pods_UIBannerView_UIBannerViewTests.framework */; };
 		F66CE35B23CC80D1003D3AFA /* UIBannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66CE35123CC80D1003D3AFA /* UIBannerView.framework */; };
 		F66CE36023CC80D1003D3AFA /* UIBannerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE35F23CC80D1003D3AFA /* UIBannerViewTests.swift */; };
 		F66CE36223CC80D1003D3AFA /* UIBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F66CE35423CC80D1003D3AFA /* UIBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F66CE36D23CC81E8003D3AFA /* IBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE36C23CC81E8003D3AFA /* IBannerModel.swift */; };
+		F66CE37023CC8218003D3AFA /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE36F23CC8218003D3AFA /* UIImageViewExtension.swift */; };
+		F66CE37323CC8248003D3AFA /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CE37223CC8248003D3AFA /* CGFloatExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CE34A0CC80D3A6048EFF8B5 /* Pods-UIBannerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView.release.xcconfig"; path = "Target Support Files/Pods-UIBannerView/Pods-UIBannerView.release.xcconfig"; sourceTree = "<group>"; };
+		8917010341FE5FEEFBAC01B4 /* Pods_UIBannerView_UIBannerViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIBannerView_UIBannerViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAE75B9655C93EA9791C488 /* Pods-UIBannerView-UIBannerViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView-UIBannerViewTests.release.xcconfig"; path = "Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7193AB78B96EBEBDE863074 /* Pods_UIBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C962B48FD9628B970BBB65C5 /* Pods-UIBannerView-UIBannerViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView-UIBannerViewTests.debug.xcconfig"; path = "Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F66CE35123CC80D1003D3AFA /* UIBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66CE35423CC80D1003D3AFA /* UIBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIBannerView.h; sourceTree = "<group>"; };
 		F66CE35523CC80D1003D3AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66CE35A23CC80D1003D3AFA /* UIBannerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIBannerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66CE35F23CC80D1003D3AFA /* UIBannerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBannerViewTests.swift; sourceTree = "<group>"; };
 		F66CE36123CC80D1003D3AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66CE36C23CC81E8003D3AFA /* IBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBannerModel.swift; sourceTree = "<group>"; };
+		F66CE36F23CC8218003D3AFA /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		F66CE37223CC8248003D3AFA /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		FA8D05F3890CB35973A73663 /* Pods-UIBannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIBannerView.debug.xcconfig"; path = "Target Support Files/Pods-UIBannerView/Pods-UIBannerView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E9C2A4745EAC3E3B39A2F07 /* Pods_UIBannerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +59,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				F66CE35B23CC80D1003D3AFA /* UIBannerView.framework in Frameworks */,
+				AC396D2392CEDA4C840CF0AF /* Pods_UIBannerView_UIBannerViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EDB96659C7F494EC9DA9D35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D05F3890CB35973A73663 /* Pods-UIBannerView.debug.xcconfig */,
+				5CE34A0CC80D3A6048EFF8B5 /* Pods-UIBannerView.release.xcconfig */,
+				C962B48FD9628B970BBB65C5 /* Pods-UIBannerView-UIBannerViewTests.debug.xcconfig */,
+				8DAE75B9655C93EA9791C488 /* Pods-UIBannerView-UIBannerViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58C1E6FE76C4EBA1341724DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7193AB78B96EBEBDE863074 /* Pods_UIBannerView.framework */,
+				8917010341FE5FEEFBAC01B4 /* Pods_UIBannerView_UIBannerViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F66CE34723CC80D1003D3AFA = {
 			isa = PBXGroup;
 			children = (
 				F66CE35323CC80D1003D3AFA /* UIBannerView */,
 				F66CE35E23CC80D1003D3AFA /* UIBannerViewTests */,
 				F66CE35223CC80D1003D3AFA /* Products */,
+				3EDB96659C7F494EC9DA9D35 /* Pods */,
+				58C1E6FE76C4EBA1341724DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +109,9 @@
 		F66CE35323CC80D1003D3AFA /* UIBannerView */ = {
 			isa = PBXGroup;
 			children = (
+				F66CE36E23CC8208003D3AFA /* Utility */,
+				F66CE36B23CC81D8003D3AFA /* Protocols */,
+				F66CE37423CC82AD003D3AFA /* View */,
 				F66CE35423CC80D1003D3AFA /* UIBannerView.h */,
 				F66CE35523CC80D1003D3AFA /* Info.plist */,
 			);
@@ -84,6 +125,46 @@
 				F66CE36123CC80D1003D3AFA /* Info.plist */,
 			);
 			path = UIBannerViewTests;
+			sourceTree = "<group>";
+		};
+		F66CE36B23CC81D8003D3AFA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F66CE36C23CC81E8003D3AFA /* IBannerModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F66CE36E23CC8208003D3AFA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F66CE37123CC822D003D3AFA /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F66CE37123CC822D003D3AFA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F66CE36F23CC8218003D3AFA /* UIImageViewExtension.swift */,
+				F66CE37223CC8248003D3AFA /* CGFloatExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F66CE37423CC82AD003D3AFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F66CE37523CC82C2003D3AFA /* UIBannerViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F66CE37523CC82C2003D3AFA /* UIBannerViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIBannerViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F66CE36523CC80D1003D3AFA /* Build configuration list for PBXNativeTarget "UIBannerView" */;
 			buildPhases = (
+				2DF3BB72D0CD183231577C65 /* [CP] Check Pods Manifest.lock */,
 				F66CE34C23CC80D1003D3AFA /* Headers */,
 				F66CE34D23CC80D1003D3AFA /* Sources */,
 				F66CE34E23CC80D1003D3AFA /* Frameworks */,
@@ -122,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F66CE36823CC80D1003D3AFA /* Build configuration list for PBXNativeTarget "UIBannerViewTests" */;
 			buildPhases = (
+				32A77764360D3C03E1F920FB /* [CP] Check Pods Manifest.lock */,
 				F66CE35623CC80D1003D3AFA /* Sources */,
 				F66CE35723CC80D1003D3AFA /* Frameworks */,
 				F66CE35823CC80D1003D3AFA /* Resources */,
+				B3494A1DD69F83A94C8DCD45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +232,7 @@
 				TargetAttributes = {
 					F66CE35023CC80D1003D3AFA = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					F66CE35923CC80D1003D3AFA = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -190,11 +275,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DF3BB72D0CD183231577C65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIBannerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32A77764360D3C03E1F920FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIBannerView-UIBannerViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3494A1DD69F83A94C8DCD45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIBannerView-UIBannerViewTests/Pods-UIBannerView-UIBannerViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F66CE34D23CC80D1003D3AFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66CE37023CC8218003D3AFA /* UIImageViewExtension.swift in Sources */,
+				F66CE37323CC8248003D3AFA /* CGFloatExtension.swift in Sources */,
+				F66CE36D23CC81E8003D3AFA /* IBannerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +491,9 @@
 		};
 		F66CE36623CC80D1003D3AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8D05F3890CB35973A73663 /* Pods-UIBannerView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C4T6DNV5Q6;
@@ -358,6 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,7 +520,9 @@
 		};
 		F66CE36723CC80D1003D3AFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE34A0CC80D3A6048EFF8B5 /* Pods-UIBannerView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C4T6DNV5Q6;
@@ -391,7 +548,9 @@
 		};
 		F66CE36923CC80D1003D3AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C962B48FD9628B970BBB65C5 /* Pods-UIBannerView-UIBannerViewTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4T6DNV5Q6;
 				INFOPLIST_FILE = UIBannerViewTests/Info.plist;
@@ -409,7 +568,9 @@
 		};
 		F66CE36A23CC80D1003D3AFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DAE75B9655C93EA9791C488 /* Pods-UIBannerView-UIBannerViewTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4T6DNV5Q6;
 				INFOPLIST_FILE = UIBannerViewTests/Info.plist;
