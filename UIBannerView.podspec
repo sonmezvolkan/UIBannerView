@@ -17,16 +17,15 @@ Pod::Spec.new do |spec|
 
   spec.name         = "UIBannerView"
   spec.version      = "1.0.1"
-  spec.summary      = "An instagram storyview like framework with an easy-to-use interface."
+  spec.summary      = "UIBannerView allows you to easily create customize banners"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "This library provides an easy way to create Instagram story-like views " \
-                      "with cube animations. It requires an arraylist of IStorySection as parameter. " \
-                      "Two more optional parameters are available for changing the colors of progress bar."
+  spec.description  = "Item size of Banner View can be changed, pageControl is created automatically, " \
+                      "track and tint colors can be changed, or pagecontrol may not be used. Left and right padding interchangeable"
 
   spec.homepage     = "https://github.com/Samcro92"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
