@@ -5,7 +5,7 @@
 
 ## Installation
 
-UIStoryView supports swift 5.0, iOS 12
+UIBannerView supports swift 5.0, iOS 12
 
 1. Add pod ‘UIBannerView’
 2. Install the pods by running pod install.
@@ -65,11 +65,16 @@ extension ViewController: UIBannerViewDelegate
 [![](Resources/ss.png)](ss.png)
 
 cells width is equal to screens width - padding.
+
 Item spacing is the gap between cell and the next one.
-Show Page Control: if off, it will not show, and if it's on, it will show (the page controler)
+
+ShowPageControl: if off, it will not show, and if it's on, it will show (the page controler)
+
 Left and right margins should be a total of 100
 if the margin is more than 50, it will show more than needed. 
-If the pageing enabled is on, it will treat the screens as pages, and if its off it will show them as free scroll
+
+If the PagingEnabled is on, it will treat the screens as pages, and if its off it will show them as free scroll
+
 Track color is related to show page control, it will mark the active page on the page scroll 
 
 ### Dependencies
