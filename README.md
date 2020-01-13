@@ -27,10 +27,14 @@ UIStoryView supports swift 5.0, iOS 12
 create your custom cell. 
 
 ```swift
-        self.bannerView.dataSource = self;
-        self.bannerView.delegate = self;
-        self.bannerView.addRegisterCustomCell(nibName: "CustomCell", forCellWithReuseIdentifier: "CustomCell");
-        self.bannerView.reloadData();
+
+private func setUp()
+{
+    self.bannerView.dataSource = self;
+    self.bannerView.delegate = self;
+    self.bannerView.addRegisterCustomCell(nibName: "CustomCell", forCellWithReuseIdentifier: "CustomCell");
+    self.bannerView.reloadData();
+ }
      
  extension ViewController: UIBannerViewDataSource
  {
