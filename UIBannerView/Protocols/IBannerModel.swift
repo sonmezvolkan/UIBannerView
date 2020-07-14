@@ -17,7 +17,7 @@ public protocol IBannerModel
 
 public enum IBannerSourceType: Int
 {
-    case Web = 0
-    case Local = 1
+    case web = 0
+    case local = 1
 }
 

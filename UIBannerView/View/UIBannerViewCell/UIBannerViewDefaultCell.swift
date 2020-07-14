@@ -14,7 +14,7 @@ internal class UIBannerViewDefaultCell: UICollectionViewCell
     
     public func bind(banner: IBannerModel)
     {
-        if let sourceType = banner.getSourceType(), sourceType == .Local
+        if let sourceType = banner.getSourceType(), sourceType == .local
         {
             self.imgBanner.image = UIImage(named: banner.getImage());
         }
