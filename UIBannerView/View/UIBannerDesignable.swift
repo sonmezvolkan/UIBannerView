@@ -15,6 +15,7 @@ open class UIBannerDesignable: UIView
     private var leftPercentage: CGFloat = 30.0;
     private var rightPercentage: CGFloat = 70.0;
     private var showPageControl: Bool = false;
+    private var isPageControlOverCollection: Bool = false;
     private var pagingEnabled: Bool = true;
     private var trackColor: UIColor = UIColor(red: 255, green: 255, blue: 255, alpha: 16);
     private var currentColor: UIColor = UIColor(red: 255, green: 255, blue: 255);
@@ -35,6 +36,12 @@ open class UIBannerDesignable: UIView
     {
         get { return self.showPageControl; }
         set { self.showPageControl = newValue; }
+    }
+    
+    @IBInspectable open var IsPageControlOverCollection: Bool
+    {
+        get { return self.isPageControlOverCollection; }
+        set { self.isPageControlOverCollection = newValue; }
     }
     
     @IBInspectable open var LeftPercentage: CGFloat

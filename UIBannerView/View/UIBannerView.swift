@@ -64,6 +64,7 @@ open class UIBannerView: UIBannerDesignable, UICollectionViewDelegateFlowLayout
         {
             self.pageControl.pageIndicatorTintColor = self.CurrentColor;
             self.pageControl.currentPageIndicatorTintColor = self.TrackColor;
+            self.constraintBottom.constant = self.IsPageControlOverCollection ? 0 : 37
         }
     }
     
