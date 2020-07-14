@@ -102,9 +102,9 @@ extension UIBannerView
         self.reloadData();
     }
     
-    open func addRegisterCustomCell(nibName: String, forCellWithReuseIdentifier: String)
+    open func addRegisterCustomCell(nib: UINib, forCellWithReuseIdentifier: String)
     {
-        self.collectionView.register(UINib.init(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: forCellWithReuseIdentifier);
+        self.collectionView.register(nib, forCellWithReuseIdentifier: forCellWithReuseIdentifier);
     }
     
     open func dequeueReusableCell(withReuseIdentifier: String, for indexPath: IndexPath) -> UICollectionViewCell
