@@ -15,6 +15,7 @@ open class UIBannerDesignable: UIView
     private var leftPercentage: CGFloat = 30.0;
     private var rightPercentage: CGFloat = 70.0;
     private var showPageControl: Bool = false;
+    private var showScrollBar: Bool = false;
     private var isPageControlOverCollection: Bool = false;
     private var pagingEnabled: Bool = true;
     private var trackColor: UIColor = UIColor(red: 255, green: 255, blue: 255, alpha: 16);
@@ -36,6 +37,12 @@ open class UIBannerDesignable: UIView
     {
         get { return self.showPageControl; }
         set { self.showPageControl = newValue; }
+    }
+    
+    @IBInspectable open var ShowScrollBar: Bool
+    {
+        get { return self.showScrollBar; }
+        set { self.showScrollBar = newValue; }
     }
     
     @IBInspectable open var IsPageControlOverCollection: Bool
