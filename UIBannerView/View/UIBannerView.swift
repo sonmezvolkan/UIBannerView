@@ -194,6 +194,10 @@ extension UIBannerView : UICollectionViewDelegate, UICollectionViewDataSource
                 newPage = ceil(contentWidth / pageWidth) - 1.0;
             }
         }
+        if (Int(newPage) >= self.pageControl.numberOfPages)
+        {
+            newPage = Float(self.pageControl.numberOfPages) - 1
+        }        
         self.pageControl.currentPage = Int(newPage);
         let point = CGPoint (x: CGFloat(newPage * pageWidth), y: targetContentOffset.pointee.y);
         targetContentOffset.pointee = point;
