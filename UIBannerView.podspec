@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = "Item size of Banner View can be changed, pageControl is created automatically, " \
                       "track and tint colors can be changed, or pagecontrol may not be used. Left and right padding interchangeable"
 
-  spec.homepage     = "https://github.com/Samcro92"
+  spec.homepage     = "https://github.com/sonmezvolkan"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Samcro92/UIBannerView.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/sonmezvolkan/UIBannerView.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
