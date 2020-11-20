@@ -204,6 +204,15 @@ extension UIBannerView : UICollectionViewDelegate, UICollectionViewDataSource
         let point = CGPoint (x: CGFloat(newPage * pageWidth), y: targetContentOffset.pointee.y);
         targetContentOffset.pointee = point;
     }
+    
+    public func scrollToRow(row: Int) {
+        let itemWidth = CGFloat(UIScreen.main.bounds.width - self.Padding);
+        let pageWidth = Float(itemWidth + ItemSpacing)
+        let newPage = Float(row)
+        self.pageControl.currentPage = row
+        let point = CGPoint (x: CGFloat(newPage * pageWidth), y: 0)
+        collectionView.scrollToPosition(point: point)
+    }
 }
 
 
